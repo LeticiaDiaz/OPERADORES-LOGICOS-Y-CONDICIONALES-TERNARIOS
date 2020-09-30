@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let examenUno = parseInt (window.prompt ('inserte su primera nota'))
+    let examenDos = parseInt (window.prompt ('inserte su segunda nota'))
+    let examenTres = parseInt (window.prompt ('inserte su tercera nota'))
+    let notaFinal 
+    examenUno>examenDos ? notaFinal = examenUno+examenTres : notaFinal = examenDos+examenTres
+    if (notaFinal == 10) {
+        window.alert ('Matrícula')
+    } else if (notaFinal >=9 && notaFinal <10) {
+        window.alert ('Sobresaliente')
+    } else if (notaFinal >=7 && notaFinal <9) {
+        window.alert ('Notable')
+    } else if (notaFinal >=6 && notaFinal <7) {
+        window.alert ('Bien')
+    } else if (notaFinal >=5 && notaFinal <6) {
+        window.alert ('Suficiente')
+    } else if (notaFinal >=0 && notaFinal <5) {
+        window.alert ('Suspenso')
+    } else {
+        window.alert ('La nota introducida no es correcta')
+    }
+</script>
+</body>
+</html>
